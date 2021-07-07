@@ -2,6 +2,10 @@
 	box-sizing: border-box;
 }
 
+*::selection {
+	background: #f2994a;
+}
+
 body {
 	color: #333;
 	font-family: 'Montserrat', sans-serif;
@@ -11,11 +15,8 @@ body {
 
 img {
 	max-width: 100%;
-	border-radius: 12px;
 }
-*::selection {
-	background: #f2994a;
-}
+
 h1,
 h2,
 h3,
@@ -27,13 +28,93 @@ h4 {
 	width: 90%;
 	max-width: 375px;
 	margin: 0 auto;
-	padding: 2em 0;
+	padding: 1em 0;
 }
+
+/* header */
 
 .main-title {
 	font-size: 24px;
+	color: #000;
+	margin-bottom: 0;
+}
+
+.main-text {
+	display: flex;
+	gap: 1em;
+	align-items: baseline;
+}
+
+.intro-text {
+	max-width: 40ch;
+	font-style: italic;
+	color: #4f4f4f;
+}
+
+.banner-img {
+	border-radius: 12px;
+}
+
+/* sidebar */
+
+.sidebar {
+	display: flex;
+	gap: 3.5em;
+	flex-direction: column;
+	padding: 2em 0;
+}
+
+.serving {
+	display: flex;
+	align-items: center;
+	gap: 0.8em;
+}
+
+.serving-text,
+.serving-yields {
+	margin: 0;
+	line-height: 1.2;
+}
+
+.serving-yields {
+	color: #bdbdbd;
+	text-transform: uppercase;
+}
+
+.fa-utensils {
+	color: #f2994a;
+}
+
+.timing {
+	display: flex;
+	justify-content: space-between;
+}
+
+.timing-card {
+	display: flex;
+	gap: 0.5em;
+	align-items: center;
+}
+
+.timing-text,
+.timing-time {
+	line-height: 1.2;
+	margin: 0;
+}
+
+.timing-text {
+	color: #bdbdbd;
 }
 
 .serving-text {
 	color: #f2994a;
+}
+
+/* instructions section */
+.number {
+	color: #fff;
+	background: #f2994a;
+	font-size: 20px;
+	border-radius: 6px;
+	padding: 0.4em 0.7em;
 }
