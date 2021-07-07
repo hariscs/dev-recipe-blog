@@ -1,4 +1,39 @@
-/* 
-font-family: 'Montserrat', sans-serif;
-font-family: 'Playfair Display', serif;
-*/
+* {
+	box-sizing: border-box;
+}
+
+body {
+	color: #333;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	line-height: 1.6;
+}
+
+img {
+	max-width: 100%;
+	border-radius: 12px;
+}
+*::selection {
+	background: #f2994a;
+}
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Playfair Display', serif;
+}
+
+.container {
+	width: 90%;
+	max-width: 375px;
+	margin: 0 auto;
+	padding: 2em 0;
+}
+
+.main-title {
+	font-size: 24px;
+}
+
+.serving-text {
+	color: #f2994a;
+}
