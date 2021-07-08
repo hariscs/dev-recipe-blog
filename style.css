@@ -110,11 +110,47 @@ h4 {
 	color: #f2994a;
 }
 
+.item {
+	display: flex;
+	gap: 0.3em;
+	align-items: baseline;
+}
+
+.check-list-text {
+	font-style: italic;
+}
+
+.cake-title {
+	font-weight: 400;
+	font-style: italic;
+}
+
+.italic-text {
+	font-style: italic;
+	color: #333;
+}
+
 /* instructions section */
+
+.instruction-detail {
+	display: flex;
+	gap: 1em;
+	align-items: flex-start;
+}
+
+.instruction-text {
+	margin-top: 0;
+	max-width: 35ch;
+}
+
+.bold-text {
+	font-weight: 700;
+}
+
 .number {
 	color: #fff;
 	background: #f2994a;
 	font-size: 20px;
 	border-radius: 6px;
-	padding: 0.4em 0.7em;
+	padding: 0.2em 0.6em;
 }
